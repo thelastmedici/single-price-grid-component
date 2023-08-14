@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+  background: hsl(204, 43%, 93%);
+  font-size: 16px;
+  min-height: 100vh;
+  font-family: 'Karla', sans-serif;
+  align-items: center;
+  display:flex;
+}
+.container{
+    max-height: 960px;
+    margin: 0 auto;
+}
+.wrapper{
+    display: grid;
+    border-radius: 7px;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    
+    
+}
+.top{
+    display: inline;
+    grid-column-start:1;
+    grid-column-end:3;
+    background-color: white;
+}
+.left_card{
+    background-color: hsl(179, 62%, 43%);
+}
+.right_card{
+    background-color: hsl(178, 60%, 75%);
+}
+.card{
+    padding:40px;
+}
+h1{
+    color:  hsl(179, 62%, 43%);
+    font-size: 26px;
+    padding-bottom:20px;
+}
+h3{
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 12px;
+}
+
+.top p{
+    
+    color:  hsl(218, 22%, 67%);
+    line-height:1.5;
+}
+h2{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+h5{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+h5 span.price{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+h5 span{
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+}
