@@ -21,7 +21,8 @@ body{
     background-color: white;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
-    
+    margin:2rem 1rem;
+    box-shadow: 0px 10px 20px hsl(180, 7%, 83%);
     
 }
 .top{
@@ -29,12 +30,14 @@ body{
     grid-column-start:1;
     grid-column-end:3;
     background-color: white;
+
 }
 .left_card{
     background-color: hsl(179, 62%, 43%);
 }
 .right_card{
-    background-color: hsl(178, 60%, 75%);
+    background-color: hsl(179, 41%, 57%);
+    padding: 20px;
 }
 .card{
     padding:40px;
@@ -57,7 +60,7 @@ h3{
 h2{
     color: white;
     font-size: 20px;
-    padding-bottom: 15px;
+    padding-top: 20px;
 }
 h5{
     display: flex;
@@ -74,4 +77,45 @@ h5 span.price{
 h5 span{
     color: hsl(204, 43%, 93%);
     font-weight: 400;
+}
+.left_card p{
+    color: white;
+}
+
+.left_card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    padding-top:10px;
+    border-radius: 5px;
+    font-weight: 800;
+    margin-top: 30px;
+    height:38px;
+}
+.right_card ul{
+ list-style-type: none;
+
+}
+.right_card li{
+    padding-top:12px;
+    font-size: 14px;
+    color: white;
+    padding-bottom: 4px;
+
+}
+@media only screen and  (min-width:460px) and (max-width: 1440px) {
+    .wrapper{
+        display: inline-block;
+    }
+    .top{
+        padding-bottom: 0px;
+    }
+}
+.footer{
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
 }
